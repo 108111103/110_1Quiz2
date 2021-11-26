@@ -10,6 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="不符合格式" ForeColor="Red" ValidationExpression="^cdcb"></asp:RegularExpressionValidator><br/>
+            <asp:Button ID="Button1" runat="server" Text="Button" /><br />
+            <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>
