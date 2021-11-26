@@ -10,11 +10,12 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="不符合格式" ForeColor="Red" ValidationExpression="^cdcb"></asp:RegularExpressionValidator><br/>
-            <asp:Button ID="Button1" runat="server" Text="Button" /><br />
+            <asp:TextBox ID="Textbox1" runat="server"></asp:TextBox>
+            <asp:RegularExpressionValidator ID="rev__CTEL" runat="server" ErrorMessage="不符合樣式" ControlToValidate="Textbox1" ForeColor="Red" ValidationExpression="(19|20)[0-9]{2}[- /](0[1-9]|1[012])[- /](0[1-9]|[12][0-9]|3[01])"></asp:RegularExpressionValidator><br/>
+            <asp:Button ID="Button1" runat="server" Text="送出" OnClick="btn_Submit_Click"/><br/>
             <asp:Label ID="lb_Msg" runat="server" Text=""></asp:Label>
         </div>
+        
     </form>
 </body>
 </html>
